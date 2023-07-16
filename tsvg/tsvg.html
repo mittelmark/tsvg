@@ -205,17 +205,20 @@ tsvg circle cx 50 cy 50 r 45 stroke black stroke-width 2 fill salmon
 tsvg text x 29 y 45 Hello
 tsvg text x 27 y 65 World!
 tsvg write images/hello-world.svg</code></pre>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPgoKPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ic2FsbW9uIiAvPgoKPHRleHQgeD0iMjkiIHk9IjQ1Ij4KSGVsbG8KPC90ZXh0PgoKPHRleHQgeD0iMjciIHk9IjY1Ij4KV29ybGQhCjwvdGV4dD4KCjwvc3ZnPgo="/><!--URL:/home/groth/workspace/pantcl/lib/tsvg/images/hello-world.svg--></p>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPgoKPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ic2FsbW9uIiAvPgoKPHRleHQgeD0iMjkiIHk9IjQ1Ij4KSGVsbG8KPC90ZXh0PgoKPHRleHQgeD0iMjciIHk9IjY1Ij4KV29ybGQhCjwvdGV4dD4KCjwvc3ZnPgo="/><!--URL:/home/groth/workspace/tsvg/tsvg/images/hello-world.svg--></p>
 <p>The typical Hello World example but this time with hyphens to easier indicate the arguments:</p>
 <pre class="tsvg" label="hello-world2"><code>tsvg set code "" ;# clear 
 tsvg circle -cx 50 -cy 50 -r 45 -stroke black -stroke-width 2 -fill skyblue
 tsvg text -x 29 -y 45 Hello
 tsvg text -x 25 -y 65 World2!
 tsvg write images/hello-world2.svg</code></pre>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPgoKPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ic2t5Ymx1ZSIgLz4KCjx0ZXh0IHg9IjI5IiB5PSI0NSI+CkhlbGxvCjwvdGV4dD4KCjx0ZXh0IHg9IjI1IiB5PSI2NSI+CldvcmxkMiEKPC90ZXh0PgoKPC9zdmc+Cg=="/><!--URL:/home/groth/workspace/pantcl/lib/tsvg/images/hello-world2.svg--></p>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPgoKPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ic2t5Ymx1ZSIgLz4KCjx0ZXh0IHg9IjI5IiB5PSI0NSI+CkhlbGxvCjwvdGV4dD4KCjx0ZXh0IHg9IjI1IiB5PSI2NSI+CldvcmxkMiEKPC90ZXh0PgoKPC9zdmc+Cg=="/><!--URL:/home/groth/workspace/tsvg/tsvg/images/hello-world2.svg--></p>
 <p>Since version 0.3.1 there is as well a method <code>tsvg combine</code> wich can be used to combine two ore more SVG files side by side.</p>
-<pre class="tsvg" data-fig="false" data-results="hide" label="combined"><code>tsvg combine [list images/hello-world.svg images/hello-world2.svg] combined.svg</code></pre>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAwKSI+Cgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJzYWxtb24iIC8+Cgo8dGV4dCB4PSIyOSIgeT0iNDUiPgpIZWxsbwo8L3RleHQ+Cgo8dGV4dCB4PSIyNyIgeT0iNjUiPgpXb3JsZCEKPC90ZXh0PgoKCjwvZz4KCjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCwgMCkiPgoKPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ic2t5Ymx1ZSIgLz4KCjx0ZXh0IHg9IjI5IiB5PSI0NSI+CkhlbGxvCjwvdGV4dD4KCjx0ZXh0IHg9IjIzIiB5PSI2NSI+CldvcmxkMiEKPC90ZXh0PgoKCjwvZz4KCjwvc3ZnPg=="/><!--URL:combined.svg--></p>
+<p></p>
+<div class="sourceCode" id="cb5" label="combined"><pre class="sourceCode tcl"><code class="sourceCode tcl"><span id="cb5-1"><a aria-hidden="true" href="#cb5-1" tabindex="-1"></a>tsvg combine <span class="kw">[list</span> images/hello-world.svg images/hello-world2.svg<span class="kw">]</span> combined.svg</span></code></pre></div>
+<pre class="tclout" label="combined"><code>here
+file3</code></pre>
+<p><img src="data:image/svg+xml;base64,"/><!--URL:combined.svg--></p>
 <h3 id="pdf-and-png-writing">Pdf and Png writing</h3>
 <p>Since version 0.3.0 writing of PNG and PDF files is as well possible if the command line tool <em>cairosvg</em> is installed. You can install this tool either using your package manager, or if yo do not have administrator rights as ordinary user using the Python package installer like this:</p>
 <pre><code>pip3 install cairosvg --user </code></pre>
@@ -223,7 +226,7 @@ tsvg write images/hello-world2.svg</code></pre>
 <pre class="tsvg" data-ext="png" data-fig="true" data-results="hide" label="test"><code>tsvg set code "" ;# clear 
 tsvg circle -cx 50 -cy 50 -r 42 -stroke red -stroke-width 7 -fill none
 tsvg write hello-world2.png</code></pre>
-<p><img src="data:image/png;base64,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"/><!--URL:/home/groth/workspace/pantcl/lib/tsvg/images/test.png--></p>
+<p><img src="data:image/png;base64,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"/><!--URL:/home/groth/workspace/tsvg/tsvg/images/test.png--></p>
 <p>For inclusion of images into LaTeX documents I would recommend using the PDF output format.</p>
 <p>To continue with an other image you have first to clean up the previous image:</p>
 <pre class="tsvg" label="basic-shapes"><code>tsvg set code "" ;# clear 
@@ -240,7 +243,7 @@ tsvg polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 
     stroke="green" fill="transparent" stroke-width="5"
 tsvg path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"
 tsvg write basic-shapes.svg</code></pre>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIyNTAiIHdpZHRoPSIyMDAiPgoKPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHN0cm9rZT0iYmxhY2siIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8cmVjdCB4PSI2MCIgeT0iMTAiIHJ4PSIxMCIgcnk9IjEwIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHN0cm9rZT0iYmxhY2siIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8Y2lyY2xlIGN4PSIyNSIgY3k9Ijc1IiByPSIyMCIgc3Ryb2tlPSJyZWQiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8ZWxsaXBzZSBjeD0iNzUiIGN5PSI3NSIgcng9IjIwIiByeT0iNSIgc3Ryb2tlPSJyZWQiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8bGluZSB4MT0iMTAiIHgyPSI1MCIgeTE9IjExMCIgeTI9IjE1MCIgc3Ryb2tlPSJvcmFuZ2UiIHN0cm9rZS13aWR0aD0iNSIgLz4KCjxwb2x5bGluZSBwb2ludHM9IjYwICAxMTAgNjUgMTIwIDcwIDExNSA3NSAxMzAgODAgMTI1IDg1IDE0MCA5MCAxMzUgOTUgMTUwIDEwMDE0NSIgc3Ryb2tlPSJvcmFuZ2UiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8cG9seWdvbiBwb2ludHM9IjUwICAxNjAgNTUgMTgwIDcwIDE4MCA2MCAxOTAgNjUgMjA1IDUwIDE5NSAzNSAyMDUgNDAgMTkwIDMwIDE4MCA0NTE4MCIgc3Ryb2tlPSJncmVlbiIgZmlsbD0idHJhbnNwYXJlbnQiIHN0cm9rZS13aWR0aD0iNSIgLz4KCjxwYXRoIGQ9Ik0yMCwyMzAgIFE0MCwyMDUgNTAsMjMwVDkwLDIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8L3N2Zz4K"/><!--URL:/home/groth/workspace/pantcl/lib/tsvg/images/basic-shapes.svg--></p>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIyNTAiIHdpZHRoPSIyMDAiPgoKPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHN0cm9rZT0iYmxhY2siIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8cmVjdCB4PSI2MCIgeT0iMTAiIHJ4PSIxMCIgcnk9IjEwIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHN0cm9rZT0iYmxhY2siIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8Y2lyY2xlIGN4PSIyNSIgY3k9Ijc1IiByPSIyMCIgc3Ryb2tlPSJyZWQiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8ZWxsaXBzZSBjeD0iNzUiIGN5PSI3NSIgcng9IjIwIiByeT0iNSIgc3Ryb2tlPSJyZWQiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8bGluZSB4MT0iMTAiIHgyPSI1MCIgeTE9IjExMCIgeTI9IjE1MCIgc3Ryb2tlPSJvcmFuZ2UiIHN0cm9rZS13aWR0aD0iNSIgLz4KCjxwb2x5bGluZSBwb2ludHM9IjYwICAxMTAgNjUgMTIwIDcwIDExNSA3NSAxMzAgODAgMTI1IDg1IDE0MCA5MCAxMzUgOTUgMTUwIDEwMDE0NSIgc3Ryb2tlPSJvcmFuZ2UiIGZpbGw9InRyYW5zcGFyZW50IiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8cG9seWdvbiBwb2ludHM9IjUwICAxNjAgNTUgMTgwIDcwIDE4MCA2MCAxOTAgNjUgMjA1IDUwIDE5NSAzNSAyMDUgNDAgMTkwIDMwIDE4MCA0NTE4MCIgc3Ryb2tlPSJncmVlbiIgZmlsbD0idHJhbnNwYXJlbnQiIHN0cm9rZS13aWR0aD0iNSIgLz4KCjxwYXRoIGQ9Ik0yMCwyMzAgIFE0MCwyMDUgNTAsMjMwVDkwLDIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjUiIC8+Cgo8L3N2Zz4K"/><!--URL:/home/groth/workspace/tsvg/tsvg/images/basic-shapes.svg--></p>
 <p>Nesting of elements can be achieved as well by adding *_start* and *_end* at the end of the tag, here an example for a group using the tag <em>g</em>.</p>
 <pre class="tsvg" label="group-circles"><code>tsvg set code ""
 tsvg set width 150
@@ -250,7 +253,7 @@ tsvg circle cx="40" cy="40" r="35"
 tsvg circle cx="60" cy="60" r="25"
 tsvg g_end
 tsvg write group-circles.svg</code></pre>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxNTAiIHdpZHRoPSIxNTAiPgoKPGcgZmlsbD0id2hpdGUiIHN0cm9rZT0iZ3JlZW4iIHN0cm9rZS13aWR0aD0iNSI+CjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjM1IiAvPgoKPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMjUiIC8+CjwvZz4KPC9zdmc+Cg=="/><!--URL:/home/groth/workspace/pantcl/lib/tsvg/images/group-circles.svg--></p>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxNTAiIHdpZHRoPSIxNTAiPgoKPGcgZmlsbD0id2hpdGUiIHN0cm9rZT0iZ3JlZW4iIHN0cm9rZS13aWR0aD0iNSI+CjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjM1IiAvPgoKPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMjUiIC8+CjwvZz4KPC9zdmc+Cg=="/><!--URL:/home/groth/workspace/tsvg/tsvg/images/group-circles.svg--></p>
 <h3 id="embedding-svg-code-into-html-pages">Embedding SVG code into HTML pages</h3>
 <p>The <em>tsvg</em> object as well offers a <em>inline</em> method which returns SVG code ready to be embed directly within HTML pages.</p>
 <pre class="tsvg" data-fig="false" data-results="show"><code>tsvg circle cx="70" cy="70" r="15" stroke="blue" fill="white" stroke-width="5"
@@ -269,8 +272,7 @@ tsvg inline</code></pre>
 <p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxNTAiIHdpZHRoPSIxNTAiPgoKPGcgZmlsbD0id2hpdGUiIHN0cm9rZT0iZ3JlZW4iIHN0cm9rZS13aWR0aD0iNSI+CjxjaXJjbGUgY3g9IjQwIiBjeT0iNDAiIHI9IjM1IiAvPgoKPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMjUiIC8+CjwvZz4KPGNpcmNsZSBjeD0iNzAiIGN5PSI3MCIgcj0iMTUiIHN0cm9rZT0iYmx1ZSIgZmlsbD0id2hpdGUiIHN0cm9rZS13aWR0aD0iNSIgLz4KCjwvc3ZnPgo="/><!--URL:inline.svg--></p>
 <h3 id="information-about-svg-files">Information about SVG files</h3>
 <p>Since version 0.3.1 there is as well a command - getSvgDimensions` to get the width and height of an SVG file.</p>
-<p></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode tcl"><code class="sourceCode tcl"><span id="cb12-1"><a aria-hidden="true" href="#cb12-1" tabindex="-1"></a><span class="kw">puts</span> <span class="kw">[</span>tsvg getSvgDimensions inline.svg<span class="kw">]</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode tcl"><code class="sourceCode tcl"><span id="cb13-1"><a aria-hidden="true" href="#cb13-1" tabindex="-1"></a><span class="kw">puts</span> <span class="kw">[</span>tsvg getSvgDimensions inline.svg<span class="kw">]</span></span></code></pre></div>
 <pre class="tclout"><code>width 150 height 150
 </code></pre>
 <h3 id="extending-the-tsvg-command">Extending the tsvg command</h3>
@@ -291,7 +293,7 @@ tsvg inline</code></pre>
     }
 }
 tsvg logo_tsvg logo.svg</code></pre>
-<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSI2MCIgd2lkdGg9IjEwMCI+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI0Y2NDkzNSIgLz4KCjx0ZXh0IHg9IjIwIiB5PSI0MCIgc3R5bGU9ImZvbnQtc2l6ZToyNHB4O2ZpbGw6Ymx1ZTsiPgp0U1ZHCjwvdGV4dD4KCjwvc3ZnPgo="/><!--URL:/home/groth/workspace/pantcl/lib/tsvg/images/logo.svg--></p>
+<p><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSI2MCIgd2lkdGg9IjEwMCI+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI0Y2NDkzNSIgLz4KCjx0ZXh0IHg9IjIwIiB5PSI0MCIgc3R5bGU9ImZvbnQtc2l6ZToyNHB4O2ZpbGw6Ymx1ZTsiPgp0U1ZHCjwvdGV4dD4KCjwvc3ZnPgo="/><!--URL:/home/groth/workspace/tsvg/tsvg/images/logo.svg--></p>
 <h3 id="documentation-extraction">Documentation extraction</h3>
 <p>The documentation for this HTML file was created using the pandoc-tcl-filter and the filter for the tsg package as follows:</p>
 <pre><code> perl -ne "s/^#' ?(.*)/\$$1/ and print " lib/tsvg/tsvg.tcl &gt; tsvg.md
@@ -305,7 +307,7 @@ tsvg logo_tsvg logo.svg</code></pre>
 <li>2021-08-28 Version 0.1 with docu uploaded to GitHub</li>
 <li>2021-08-31 Version 0.2 fix for the header line</li>
 <li>2021-12-01 Version 0.3.0 adding write option for PNG and PDF files using cairosvg</li>
-<li>2023-07-15 Version 0.3.1 fixing height issue, adding combineSVG</li>
+<li>2023-07-15 Version 0.3.1 fixing height issue, adding combine files method, own repo, License now BSD</li>
 </ul>
 <h2 id="see-also">SEE ALSO</h2>
 <ul>
@@ -315,26 +317,33 @@ tsvg logo_tsvg logo.svg</code></pre>
 <h2 id="author">AUTHOR</h2>
 <p>Detlef Groth, Caputh-Schwielowsee, Germany, detlef(<em>at</em>)dgroth(<em>dot</em>).de</p>
 <h2 id="license">LICENSE</h2>
-<pre><code>MIT License
+<pre><code>BSD 3-Clause License
 
-Copyright (c) 2021-2023 Detlef Groth, Caputh-Schwielowsee, Germany
+Copyright (c) 2023, D Groth
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</code></pre>
+2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+         SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
 </body>
-</html><!--Generated by HTMLArk 2023-07-16 06:56:38.587212. Original URL tsvg-temp.html-->
+</html><!--Generated by HTMLArk 2023-07-16 08:01:33.141720. Original URL tsvg-temp.html-->
