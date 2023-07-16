@@ -39,6 +39,8 @@ tsvg write hello-world.svg
 
 * Manual [https://htmlpreview.github.io/?https://github.com/mittelmark/tsvg/blob/master/tsvg/tsvg.html](https://htmlpreview.github.io/?https://github.com/mittelmark/tsvg/blob/master/tsvg/tsvg.html)
 * Download [https://github.com/mittelmark/tsvg/archive/refs/heads/main.zip](https://github.com/mittelmark/tsvg/archive/refs/heads/main.zip)
+* Wikipage at Tclers Wiki for discussion [https://wiki.tcl-lang.org/page/tsvg](https://wiki.tcl-lang.org/page/tsvg](https://wiki.tcl-lang.org/page/tsvg)
+* Mozilla SVG Element Reference [https://developer.mozilla.org/en-US/docs/Web/SVG/Element](https://developer.mozilla.org/en-US/docs/Web/SVG/Element)
 
 ## Installation
 
