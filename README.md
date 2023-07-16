@@ -47,6 +47,10 @@ tsvg write hello-world.svg
 Download the Zip archive, link above, and place it into a folder  belonging to
 your Tcl  package path.
 
+Alternatively you can just download the single file Tcl-script
+[https://raw.githubusercontent.com/mittelmark/tsvg/main/tsvg/tsvg.tcl](https://raw.githubusercontent.com/mittelmark/tsvg/main/tsvg/tsvg.tcl)
+and source it into your Tcl application.
+
 ## License
 
 BSD-3-Clause 
