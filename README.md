@@ -19,6 +19,21 @@ install `cairosvg` use for instance the Python package installer like this
 ```
 $ pip3 install cairosvg --user
 ```
+## Example
+
+Here the typical "Hello World!" example.
+
+```tcl
+package require tsvg
+tsvg set width 100
+tsvg set height 100
+tsvg circle cx 50 cy 50 r 45 stroke black stroke-width 2 fill salmon
+tsvg text x 29 y 45 Hello
+tsvg text x 27 y 65 World!
+tsvg write hello-world.svg
+```
+
+![](data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9InllcyI/PgogICAgPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPgoKPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ic2FsbW9uIiAvPgoKPHRleHQgeD0iMjkiIHk9IjQ1Ij4KSGVsbG8KPC90ZXh0PgoKPHRleHQgeD0iMjciIHk9IjY1Ij4KV29ybGQhCjwvdGV4dD4KCjwvc3ZnPgo=)
 
 ## Links
 
