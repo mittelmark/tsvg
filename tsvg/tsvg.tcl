@@ -2,7 +2,7 @@
 ##############################################################################
 #  Created By    : Dr. Detlef Groth
 #  Created       : Sat Aug 28 09:52:16 2021
-#  Last Modified : <230716.0801>
+#  Last Modified : <230716.0919>
 #
 #  Description	 : Minimal Tcl package to write SVG code and write it to 
 #                  a file.
@@ -100,7 +100,7 @@
 #' 
 #' > just an `interp alias` for `namespace current`
 #' 
-#' __tsvg combine__ _inputFiles outputFile_
+#' __tsvg combine__ _inputFiles ?outputFile?_
 #' 
 #' > Combines several SVG files side by side, usually the should have the same height. See the demo which combines two simple "Hello World!" files
 #'
@@ -169,16 +169,14 @@
 #' 
 #' Since version 0.3.1 there is as well a method `tsvg combine` wich can be used to combine two ore more SVG files side by side.
 #' 
-#' ```{.tcl results=hide echo=false}
+#' ```{.tcl echo=false results=hide}
 #' source tsvg.tcl
 #' ```
 #'
-#' ```{.tcl label=combined}
-#' tsvg combine [list images/hello-world.svg images/hello-world2.svg] combined.svg
+#' ```{.tsvg label=combined results=asis}
+#' tsvg combine [list images/hello-world.svg images/hello-world2.svg]
 #' ```
 #' 
-#' ![](combined.svg)
-#'
 #' ### Pdf and Png writing
 #' 
 #' Since version 0.3.0 writing of PNG and PDF files is as well possible if the command line tool *cairosvg* is installed. You can install this tool either using your package manager, or if yo do not have administrator rights as ordinary user using the Python package installer like this:
@@ -520,25 +518,26 @@ tsvg proc figure {filename width height args} {
     return $filename.svg
 }
 
-tsvg proc combine {inputFiles outputFile} {
+tsvg proc combine {inputFiles {outputFile ""}} {
     set self [self]
-    set combinedSvgCode "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n"
-    append combinedSvgCode "<svg xmlns=\"http://www.w3.org/2000/svg\">\n"
+    set combinedSvgCode ""
     set xTranslate 0
-    puts here
     foreach inputFile $inputFiles {
         set svgCode [$self ReadSvgFile $inputFile]
         array set svgDimensions [$self getSvgDimensions $inputFile]
-        set combinedSvgCode "${combinedSvgCode}\n<g transform=\"translate(${xTranslate}, 0)\">\n${svgCode}\n</g>\n"
-
+        append combinedSvgCode "<g transform=\"translate(${xTranslate}, 0)\">\n${svgCode}\n</g>\n"
         set xTranslate [expr {$xTranslate + $svgDimensions(width)}]
     }
-
-    set combinedSvgCode "${combinedSvgCode}\n</svg>"
-    
-    set file [open $outputFile w]
-    puts -nonewline $file $combinedSvgCode
-    close $file
+    $self set code $combinedSvgCode
+    $self set width $xTranslate
+    $self set height $svgDimensions(width)
+    #puts $combinedSvgCode
+    if {$outputFile ne ""} {
+        $self write $outputFile
+    } else {
+        $self write test.svg
+        return $combinedSvgCode
+    }
 }
 
 tsvg proc ReadSvgFile {filename} {
@@ -548,7 +547,7 @@ tsvg proc ReadSvgFile {filename} {
     set file [open $filename r]
     set content ""
     while {[gets $file line] >= 0} {
-        if {![regexp {(<\?xml|</?svg)} $line]} {
+        if {![regexp {<\?xml} $line] && ![regexp {<svg} $line] && ![regexp {</svg>} $line]} {
             append content "$line\n"
         }
         
