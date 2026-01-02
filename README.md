@@ -51,6 +51,15 @@ Alternatively you can just download the single file Tcl-script
 [https://raw.githubusercontent.com/mittelmark/tsvg/main/tsvg/tsvg.tcl](https://raw.githubusercontent.com/mittelmark/tsvg/main/tsvg/tsvg.tcl)
 and source it into your Tcl application.
 
+
+## Changes
+
+* __2021-08-28 Version 0.1__ - with docu uploaded to GitHub
+* __2021-08-31 Version 0.2__ - fix for the header line
+* __2021-12-01 Version 0.3.0__ - adding write option for PNG and PDF files using cairosvg 
+* __2023-07-15 Version 0.3.1__ - fixing height issue, adding combine files method, own repo, License now BSD
+* __2026-01-02 version 0.4.0__ - support for rsvg-convert in addtion to cairosvg to convert to pdf and png
+
 ## License
 
 BSD-3-Clause 
@@ -58,6 +67,4 @@ BSD-3-Clause
 ## Author and Copyright
 
 Detlef Groth, University of Potsdam, Germany
-
-
 
