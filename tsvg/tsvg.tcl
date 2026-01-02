@@ -2,7 +2,7 @@
 ##############################################################################
 #  Created By    : Dr. Detlef Groth
 #  Created       : Sat Aug 28 09:52:16 2021
-#  Last Modified : <260102.1627>
+#  Last Modified : <260102.1655>
 #
 #  Description	 : Minimal Tcl package to write SVG code and write it to 
 #                  a file.
@@ -280,19 +280,21 @@
 #' That way you can as well create your own function which perform more complex SVG element creations. Here an example:
 #' 
 #' ```{.tsvg label=logo}
-#' tsvg proc logo_tsvg {{filename ""}} {
+#' tsvg proc logo_tsvg {{filename ""} {col blue}} {
 #'     tsvg set code ""
 #'     tsvg set width 100
 #'     tsvg set height 60
 #'     tsvg rect x 0 y 0 width 100 height 100 fill #F64935
-#'     tsvg text x 20 y 40 style "font-size:24px;fill:blue;" tSVG
+#'     tsvg text x 20 y 40 style "font-size:24px;fill:$col;" tSVG
 #'     if {$filename ne ""} {
 #'        tsvg write $filename
 #'     }
 #' }
-#' tsvg logo_tsvg logo.svg
+#' tsvg logo_tsvg logo1.svg blue
+#' tsvg logo_tsvg logo2.png skyblue
 #' ```
 #' 
+#' ![](logo1.svg)
 #'
 #' ### Documentation extraction
 #' 
