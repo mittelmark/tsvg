@@ -2,8 +2,8 @@
 [![Release](https://img.shields.io/github/v/release/mittelmark/tsvg.svg?label=current+release)](https://github.com/mittelmark/tsvg/releases)
 ![Downloads](https://img.shields.io/github/downloads/mittelmark/tsvg/total)
 ![Commits](https://img.shields.io/github/commits-since/mittelmark/tsvg/latest)
-[![Docu Package](https://img.shields.io/badge/Docu-Package-blue)](http://htmlpreview.github.io/?https://github.com/mittelmark/tmdoc/blob/master/tsvg/tsvg.html)
-
+[![Docu Package](https://img.shields.io/badge/Docu-HTML-blue)](http://htmlpreview.github.io/?https://github.com/mittelmark/tsvg/blob/master/tsvg/tsvg.html)
+[![Docu Package](https://img.shields.io/badge/Docu-PDF-blue)](https://github.com/mittelmark/tsvg/releases/download/v0.4.0/tsvg.pdf)
 # tsvg - Thingy SVG writer
 
 Tcl  package  to create SVG files easily.
