@@ -2,7 +2,7 @@
 ##############################################################################
 #  Created By    : Dr. Detlef Groth
 #  Created       : Sat Aug 28 09:52:16 2021
-#  Last Modified : <260102.1655>
+#  Last Modified : <260102.1657>
 #
 #  Description	 : Minimal Tcl package to write SVG code and write it to 
 #                  a file.
@@ -630,7 +630,7 @@ tsvg proc demo {} {
     puts "Writing file basic-shapes.pdf done!"
 }
 
-                   
+
 if {[info exists argv0] && $argv0 eq [info script] && [regexp tsvg.tcl $argv0]} {
     #package require Tk
     tsvg demo
