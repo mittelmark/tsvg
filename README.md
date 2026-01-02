@@ -1,10 +1,17 @@
+[![license](https://img.shields.io/badge/license-BSD-lightgray.svg)](https://opensource.org/license/bsd)
+[![Release](https://img.shields.io/github/v/release/mittelmark/tsvg.svg?label=current+release)](https://github.com/mittelmark/tsvg/releases)
+![Downloads](https://img.shields.io/github/downloads/mittelmark/tsvg/total)
+![Commits](https://img.shields.io/github/commits-since/mittelmark/tsvg/latest)
+[![Docu Package](https://img.shields.io/badge/Docu-Package-blue)](http://htmlpreview.github.io/?https://github.com/mittelmark/tmdoc/blob/master/tsvg/tsvg.html)
+
 # tsvg - Thingy SVG writer
 
 Tcl  package  to create SVG files easily.
 
-`tsvg` is a pure Tcl package  to create svg image  files with a syntax
+`tsvg` is a pure Tcl package  to create svg image files with a syntax
 close to Tcl and to SVG. Using the python tool *cairosvg*  writing PDF and PNG
-files is as well possible.
+files is as well possible. Since version 0.4.0 as well  *rsvg-convert*  can be
+used instead.
 
 ## Description
 
